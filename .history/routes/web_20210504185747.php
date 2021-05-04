@@ -34,5 +34,5 @@ Route::post('/memory/confirm', 'ImageController@upload')->name('memory/confirm')
 */
 Route::post('/memory/complete', 'ImageController@upload')->name('memory/complete');
 // おすすめの山情報
-Route::get('/recommended', 'MountainController@index')->name('/recommended');
+Route::post('/memory/confirm', 'ImageController@upload')->name('memory/confirm');
 
