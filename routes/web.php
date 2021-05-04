@@ -22,14 +22,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', function () {
     return view('about');
 })->name('about');
-// あなたの思い出の景色
+// あなたの思い出の尾瀬
 Route::get('/memory/board', function () {
     return view('memory/board');
 })->name('memory/board');
 Route::get('/memory/submit', function () {
     return view('memory/submit');
 })->name('memory/submit');
-/*
+/*確認画面を将来的に追加予定2021.04.20
 Route::post('/memory/confirm', 'ImageController@upload')->name('memory/confirm');
 */
 Route::post('/memory/complete', 'ImageController@upload')->name('memory/complete');
+// 尾瀬の見どころ
+Route::get('/recommended/top', 'MountainController@index')->name('/recommended/top');
