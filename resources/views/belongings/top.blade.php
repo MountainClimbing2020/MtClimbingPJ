@@ -38,7 +38,7 @@
                         <form action ="{{action('belongingsController@edit',$belonging)}}"method="post">
                         {{ csrf_field() }}
                         {{ method_field('get') }}
-                            <button type="submit" class="btn btn-primary">編集</button>
+                          <button type="submit" class="btn btn-primary">編集</button>
                         </form>
                     </td>
         <!-- 削除ボタン -->

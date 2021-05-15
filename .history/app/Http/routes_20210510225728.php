@@ -1,4 +1,0 @@
-
-namespace App\Http;
-
-Route::
