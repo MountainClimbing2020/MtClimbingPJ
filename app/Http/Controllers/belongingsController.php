@@ -6,13 +6,26 @@ use Illuminate\Http\Request;
 
 class belongingsController extends Controller
 {
-    public function getAllMessage(Request $request) {
-
-        $list = Belongings::select(
-            'select goods, created_at from belongings order by created_at asc'
-        );
-
-        return view('belongings/top');
+    public function index() {
+        $belongings = Belongings::all();
+        return view('belongings.top') ->with('belongings',$belongings);
     }
-
+    public function store(Request $request){
+        $belonging = new Belongings();
+        $belonging->goods =$request->goods;
+        $belonging->save();
+        return redirect('/belongings/top');
+    }
+    public function destroy(Belongings $belonging) {
+        $belonging->delete();
+        return redirect('/belongings/top');
+    }
+    public function edit(Belongings $belonging) {
+        return view('belongings.edit')->with('belongings',$belonging);
+    }
+    public function update(Request $request,Belongings $belonging) {
+        $belonging->goods = $request->goods;
+        $belonging->save();
+        return redirect('/belongings/top');
+    }
 }
