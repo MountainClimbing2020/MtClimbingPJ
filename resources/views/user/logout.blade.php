@@ -8,6 +8,7 @@
 </head>
 <body>
 <p>ログアウトしました</p>
+<p><a href="{{ route('top') }}">トップ</a></p>
 
 </body>
 </html>
