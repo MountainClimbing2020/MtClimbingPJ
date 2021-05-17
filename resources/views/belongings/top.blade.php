@@ -32,7 +32,7 @@
             @foreach($belongings as $belonging)
                 <tr>
                     <td>
-                        {{$belonging->goods}}
+                        {{$belonging->body}}
                     </td>
                     <td>
                         <form action ="{{action('belongingsController@edit',$belonging)}}"method="post">

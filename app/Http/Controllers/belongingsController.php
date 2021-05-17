@@ -12,7 +12,7 @@ class belongingsController extends Controller
     }
     public function store(Request $request){
         $belonging = new Belongings();
-        $belonging->goods =$request->goods;
+        $belonging->body =$request->body;
         $belonging->save();
         return redirect('/belongings/top');
     }
@@ -24,7 +24,7 @@ class belongingsController extends Controller
         return view('belongings.edit')->with('belongings',$belonging);
     }
     public function update(Request $request,Belongings $belonging) {
-        $belonging->goods = $request->goods;
+        $belonging->body = $request->body;
         $belonging->save();
         return redirect('/belongings/top');
     }
