@@ -15,7 +15,8 @@ class Belongings extends Migration
     {
         Schema::create('belongings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('body'); 
+            $table->integer('user_id');
+            $table->text('body');
             $table->timestamps();
         });
     }
