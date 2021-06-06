@@ -25,5 +25,6 @@
             {{ csrf_field() }}
         </form>
     </div>
+    @extends('layouts.footer_bootstrap')
 </div>
 @endsection

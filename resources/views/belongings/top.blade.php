@@ -76,8 +76,6 @@
             })
         ();
         </script>
-    <a href="{{route('user.signin')}}">
-        <button type="button">マイページへ戻る</button>
-    </a>
+@extends('layouts.footer_bootstrap')
     </body>
 </html>

@@ -7,9 +7,6 @@
 <p>＊会員登録をすると持ち物リスト機能と<br>
     お気に入りの山リスト機能が利用できます＊</p>
 <p>会員登録は<a href="{{route('user.signup')}}">こちら</a>から！</p>
-<a href="{{route('user.signin')}}">
-    <button type="button">マイページへ戻る</button>
-</a>
-
+@extends('layouts.footer_bootstrap')
 </body>
 </html>

@@ -14,7 +14,7 @@
             <a href="/recommended">おすすめの山情報</a>
             <a href="/belongings/top">持ち物リスト</a>
             @endif
-            <a href="/news/top">登山情報News</a>
+            {{-- <a href="/news/top">登山情報News</a> --}}
             <a href="/contact/top">お問い合わせ</a>
         </div>
     </div>

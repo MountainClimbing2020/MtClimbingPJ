@@ -34,4 +34,5 @@
 
 <button class="btn btn-lg btn-primary btn-block" type="submit">送信</button>
 </form>
+@extends('layouts.footer_bootstrap')
 @endsection
