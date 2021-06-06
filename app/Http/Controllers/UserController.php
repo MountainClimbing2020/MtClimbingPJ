@@ -34,7 +34,7 @@ class UserController extends Controller
         return redirect()->route('user.profile');
     }
     public function getprofile(){
-        return view('user.profile');
+        return view('top');
     }
 // ログイン
     public function getSignin(){
@@ -50,7 +50,7 @@ class UserController extends Controller
         return view('top');
         }
         // 認証失敗
-        return redirect()->back();
+        // return redirect()->back();
     }
 // ログアウト
     public function getLogout(Request $request){

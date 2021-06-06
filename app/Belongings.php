@@ -9,4 +9,9 @@ class Belongings extends Model
     protected $table ='belongings';
     protected $guarded =['id'];
 
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+
 }
