@@ -23,6 +23,8 @@
     </div>
 
     {{ $data->links() }}
-    @extends('layouts.footer_bootstrap')
+    <a href="{{route('user.signin')}}">
+        <button type="button">マイページへ戻る</button>
+    </a>
 </body>
 </html>
