@@ -83,6 +83,5 @@ Route::get('/news/top', function () {
     return view('news/top');
 })->name('news/top');
 //お問い合わせ
-Route::get('/contact/top', function () {
-    return view('contact/top');
-})->name('news/top');
+Route::get('/contact/top', 'ContactController@index')->name('/contact/top');
+Route::post('/contact/top', 'ContactController@sendMail')->name('/contact/top');
