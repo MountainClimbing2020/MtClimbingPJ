@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>このサイトについて</title>
-</head>
-<body>
-            <!-- Fonts -->
-            <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="../../css/style.css">
-
-
+@extends('layouts.master_bootstrap') {{-- テンプレート読み込み --}}
+@section('title', 'このサイトについて') {{-- サイトタイトル定義 --}}
 <h1>登山しよう</h1>
 <p>山が好きだから、健康のために運動したいから、理由はなんだってOKです</p>
 <p>あなたの一番好きな場所を見つけよう</p>
 <br>
 <p>＊会員登録をすると持ち物リスト機能と<br>
     お気に入りの山リスト機能が利用できます＊</p>
-
-<p>登録はコチラから！</p>
-
-
-<p>戻るボタン作成</p>
+<p>会員登録は<a href="{{route('user.signup')}}">こちら</a>から！</p>
+<a href="{{route('user.signin')}}">
+    <button type="button">マイページへ戻る</button>
+</a>
 
 </body>
 </html>

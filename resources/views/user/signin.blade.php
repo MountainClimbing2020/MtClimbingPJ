@@ -1,4 +1,5 @@
-@extends('layouts.master_auth')
+@extends('layouts.master_bootstrap') {{-- テンプレート読み込み --}}
+@section('title', 'ログイン') {{-- サイトタイトル定義 --}}
 @section('content')
 <div class="row">
     <div class="col-md-4 col-md-offset-4">

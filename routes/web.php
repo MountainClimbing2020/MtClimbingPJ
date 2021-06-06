@@ -78,3 +78,11 @@ Route::group(['middleware'=>'auth'],function(){
     Route::get('/belongings/top','belongingsController@index')->name('belongings/top');
     Route::resource('belongings','belongingsController');
 });
+//登山情報NEWS
+Route::get('/news/top', function () {
+    return view('news/top');
+})->name('news/top');
+//お問い合わせ
+Route::get('/contact/top', function () {
+    return view('contact/top');
+})->name('news/top');

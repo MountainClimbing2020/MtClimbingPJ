@@ -1,10 +1,10 @@
 
-@extends('layouts.master_auth')
-
+@extends('layouts.master_bootstrap') {{-- テンプレート読み込み --}}
+@section('title', '会員登録-入力フォーム-') {{-- サイトタイトル定義 --}}
 @section('content')
-  <div class="row">
-  <form action="{{ route('user.signup') }}" method="post" class="form-horizontal" style="margin-top: 50px;">
-  <div class="form-group">
+    <div class="row">
+<form action="{{ route('user.signup') }}" method="post" class="form-horizontal" style="margin-top: 50px;">
+    <div class="form-group">
   <label class="col-sm-3 control-label" for="InputName">氏名</label>
   <div class="col-sm-9">
   <input type="text" name="name" class="form-control" id="InputName" placeholder="氏名">
