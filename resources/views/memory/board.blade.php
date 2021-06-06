@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>思い出の景色を投稿しよう</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../css/style.css">
-</head>
+@extends('layouts.master_bootstrap') {{-- テンプレート読み込み --}}
+@section('title', '思い出の景色を伝えよう') {{-- サイトタイトル定義 --}}
+@section('content')
 <body>
 <p>山の景色</p>
 <dl>
@@ -21,6 +14,8 @@
 <a href="{{route('memory/submit')}}">
     <button type="button">投稿する</button>
 </a>
-</body>
+<a href="{{route('user.signin')}}">
+    <button type="button">マイページへ戻る</button>
+</a>
 </body>
 </html>
